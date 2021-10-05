@@ -1,3 +1,3 @@
-export default function Header({ title }) {
+export const Header = ({ title }) => {
   return <h1 className="title">{title}</h1>
 }
