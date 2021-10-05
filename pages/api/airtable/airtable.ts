@@ -1,6 +1,6 @@
 import Airtable from 'airtable';
 import { config } from 'dotenv';
-import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } from 'secrets';
+import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } from 'secrets/secrets';
 
 interface User {
   name: string;
