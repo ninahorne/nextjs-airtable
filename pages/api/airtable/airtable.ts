@@ -1,5 +1,5 @@
 import Airtable from 'airtable';
-import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } from 'secrets/secrets';
+// import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID } from 'secrets/secrets';
 
 interface User {
   name: string;
@@ -10,8 +10,8 @@ interface User {
 export const usersKey = 'Users';
 export async function getAllUsers(): Promise<User[]> {
 
-  const apiKey: string = AIRTABLE_API_KEY || process.env.AIRTABLE_API_KEY || '';
-  const baseId: string = AIRTABLE_BASE_ID || process.env.AIRTABLE_BASE_ID || '';
+  const apiKey: string = process.env.AIRTABLE_API_KEY || '';
+  const baseId: string = process.env.AIRTABLE_BASE_ID || '';
 
   const airtable = new Airtable({
     apiKey
