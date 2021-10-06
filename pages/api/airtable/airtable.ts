@@ -31,7 +31,6 @@ export async function getAllUsers(apiKey: string, baseId: string): Promise<User[
 
     return user;
   });
-  console.log(records);
 
   return Promise.resolve(records);
 }
