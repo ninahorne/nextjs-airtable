@@ -8,7 +8,6 @@ interface User {
 
 export const usersKey = 'Users';
 export async function getAllUsers(apiKey: string, baseId: string): Promise<User[]> {
-
   const airtable = new Airtable({
     apiKey
   });
